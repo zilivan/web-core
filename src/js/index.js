@@ -1,3 +1,3 @@
-import '../scss/style.scss'
+import 'src/scss/proect1.scss'
 
-console.log('Works!')
+
