@@ -3,7 +3,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('TTLakes'),
-		url(fond/TTLakes-Regular.woff) format('woff');
+		url(../fonts/TTLakes-Regular.woff) format('woff');
 
 }
 
@@ -13,7 +13,7 @@
 	font-style: normal;
 	font-weight: bold;
 	src: local('TTLakes'),
-		url(fond/TTLakes-Bold.woff) format('woff');
+		url(../fonts/TTLakes-Bold.woff) format('woff');
 }
 
 body {

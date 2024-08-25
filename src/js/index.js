@@ -1,3 +1,6 @@
-import 'src/scss/proect1.scss'
-
-
+import '../scss/proect.scss'
+import '../scss/proect2.scss'
+import '../scss/main.css'
+import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
+import '../js/main.js'
+import '../js/proect2.js'
