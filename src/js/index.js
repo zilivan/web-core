@@ -1,3 +1,5 @@
-import 'src/scss/proect1.scss'
+import '../scss/main.scss';
+import '../scss/proect.scss';
+
 
 
