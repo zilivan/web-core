@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
-    <title>учебная хрень</title>
+    <title>учебная хрень часть 3</title>
     <meta charset="utf-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -82,6 +82,86 @@
                 <img src="./img/Picture.png">
             </div>
         </section>
+        <div class="block2">
+
+            <div class="upperHed">
+               <div class="upperHed-text">Ремонт техники различных брендов</div>
+                </div>
+            <div class="cats">
+            </div>
+            <div class="footerMenu">
+                <div class="line__expand">
+                 <img src="./img/expand.png">
+                </div>
+                <input class="line_input" type="checkbox" id="check">
+                <label class="line_text" for="check">Показать все</label>
+            </div>
+            <div class="slaid">
+                <!-- Swiper -->
+    <div class="swiper mySwiper">
+     <div class="swiper-wrapper"></div>
+    <div class="swiper-pagination"></div>
+   </div>
+          <!-- Swiper JS -->
+            </div>
+            </div>
+            <div class="block3">
+
+                <div class="upperHed">
+                   <div class="upperHed-text">Ремонт различных видов техники</div>
+                    </div>
+                <div class="tehniks">
+                    
+                </div>
+                <div class="footerMenu">
+                    <div class="tehnik-line__expand">
+                     <img src="./img/expand.png">
+                    </div>
+                    <input class="tehnik-line_input" type="checkbox" id="tehcheck">
+                    <label class="tehnik-line_text" for="tehcheck">Показать все</label>
+                </div>
+                <div class="slaid">
+                    <!-- Swiper -->
+    <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            </div>
+        <div class="swiper-pagination"></div>
+       </div>
+              <!-- Swiper JS -->
+                </div>
+                </div>
+
+
+
+
+
+
+        <template id="cat-copy">
+            <div class="cat">
+                <div class="bitmap"><img src="">
+                </div>
+                <div class="line__go"><a href="#"><img src="./img/go.png"></a>
+                </div>
+            </div>  
+        </template>
+        <template id="cat-slid">
+            <div class="swiper-slide">
+                <div class="cat">
+                    <div class="bitmap"><img src="">
+                    </div>
+                    <div class="line__go"><a href="#"><img src="./img/go.png"></a>
+                    </div>
+                </div>  
+            </div>
+        </template>
+        <template id="tehniks-copy">
+            <div class="tehniks-cat">
+                <div class="tehniks-bitmap"></div>
+                <div class="tehniks-line__go"><a href="#"><img src="./img/go.png"></a>
+                </div>
+            </div>  
+        </template>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     </main>
 </body>

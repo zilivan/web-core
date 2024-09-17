@@ -20,7 +20,8 @@ body {
 	font-family: 'TTLakes', sans-serif;
 	border: 0px dotted rgb(98, 0, 255);
 }
-.block2{
+.block2,
+.block3{
 	width: 100%;
 	border: 2px solid rgb(141, 214, 45);
 	background-color:  rgba(248, 248, 248, 1);
@@ -43,13 +44,17 @@ body {
 	color: rgba(126, 126, 130, 1);
 	border: 0px solid rgb(32, 224, 48);
 }
-.cats {
+.cats, 
+.tehniks
+{
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
 	border: 0px solid rgb(106, 32, 224);
 }
-.cat {
+.cat,
+.tehniks-cat
+ {
 	display:flex;
 	height:72px;
 	width: 224px;	
@@ -59,18 +64,30 @@ body {
 	background-color:  rgba(255, 255, 255, 1);
 
 }
-.bitmap{
+.tehniks-cat {
+	height:160px;
+}
+.bitmap,
+.tehniks-bitmap{
 	border: 0px solid rgb(106, 32, 224);
 	margin-left: 16px;
 	margin-top: auto ;
 	margin-bottom: auto;	
 }
-.line__go{
+.tehniks-bitmap{
+	font-weight: bold;
+	margin-top: 16px ;	
+}
+.line__go,
+.tehniks-line__go{
 	height:40px;
 	width: 40px;
      margin-right: 16px;
 	margin-top: auto ;
 	margin-bottom: auto;	
+}
+.tehniks-line__go{
+	margin-bottom: 16px;	
 }
 .footerMenu{
 	display:flex;
@@ -89,7 +106,9 @@ body {
 	margin-bottom: auto;
 	
 }
-.line_text{
+.line_text,
+.tehnik-line_text
+{
 	height:16px;
 	font-size: 16px;
 	font-weight:normal;
@@ -99,7 +118,9 @@ body {
 }
 
 .line_input,
-.slaid{
+.slaid,
+.tehnik-line_input
+	{
 	display: none;
 }
 
