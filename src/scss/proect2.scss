@@ -43,13 +43,17 @@ body {
 	color: rgba(126, 126, 130, 1);
 	border: 0px solid rgb(32, 224, 48);
 }
-.cats {
+.cats,
+.remonts
+{
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
 	border: 0px solid rgb(106, 32, 224);
 }
-.cat {
+.cat,
+.remont
+ {
 	display:flex;
 	height:72px;
 	width: 224px;	
@@ -57,20 +61,38 @@ body {
 	justify-content:space-between;
 	border: 0px solid rgb(32, 224, 48);
 	background-color:  rgba(255, 255, 255, 1);
-
 }
+.remont{
+	height:160px;
+}
+
+ 
+
 .bitmap{
 	border: 0px solid rgb(106, 32, 224);
 	margin-left: 16px;
 	margin-top: auto ;
 	margin-bottom: auto;	
 }
+.remont .bitmap{
+	margin-left: 16px;
+	margin-top: 16px ;
+	margin-bottom: auto;
+
+}
+
 .line__go{
 	height:40px;
 	width: 40px;
      margin-right: 16px;
 	margin-top: auto ;
 	margin-bottom: auto;	
+}
+.remont .line__go{
+	margin-right: auto;
+	margin-top: auto ;
+	margin-bottom: 16px;
+
 }
 .footerMenu{
 	display:flex;
