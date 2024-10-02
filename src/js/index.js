@@ -2,7 +2,7 @@
 import '../scss/main.scss';
 import '../scss/proect.scss';
 import '../scss/proect2.scss';
-
+import '../scss/proect3.scss';
 
 var brends = ["hp","aplle","aser","bosh","samsung","hp","aser","bosh","aser","bosh","samsung","hp"];
 var remmonts = ["Ремонт ноутбуков","Ремонт планшетов","Ремонт ПК","Ремонт мониторов","Ремонт зонтов","Ремонт часов","Ремонт холдильников","Ремонт телефонов"];
