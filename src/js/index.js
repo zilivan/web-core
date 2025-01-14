@@ -1,12 +1,14 @@
 
 import '../scss/main.scss';
 import '../scss/proect.scss';
-import '../scss/proect2.scss';
-import '../scss/proect3.scss';
+/*import '../scss/mobilMenu.scss';*/
+import '../scss/block2.scss';
+import '../scss/block3.scss';
 
-var brends = ["hp","aplle","aser","bosh","samsung","hp","aser","bosh","aser","bosh","samsung","hp"];
-var remmonts = ["Ремонт ноутбуков","Ремонт планшетов","Ремонт ПК","Ремонт мониторов","Ремонт зонтов","Ремонт часов","Ремонт холдильников","Ремонт телефонов"];
-
+const brends = ["hp","aplle","aser","bosh","samsung","hp","aser","bosh","aser","bosh","samsung","hp"];
+const remmonts = ["Ремонт ноутбуков","Ремонт планшетов","Ремонт ПК","Ремонт мониторов","Ремонт зонтов","Ремонт часов","Ремонт холдильников","Ремонт телефонов"];
+const nombersRemont = 4;
+const nombersBrand = 8;
 var cats = document.querySelector('.cats');
 var remonts = document.querySelector('.remonts');
 
@@ -108,13 +110,13 @@ var clearPicter = function (type) {
          };
          };
     if (type == "brand") {
-     for (let i = 0; i <= 5; i++) {
+     for (let i = 0; i <= nombersBrand -1; i++) {
     var newCat = newCatTemplate.cloneNode(true);
     addPicterCat(newCat,brends[i],type);
      };
      };
      if (type == "remont") {
-      for (let i = 0; i <= 2; i++) {
+      for (let i = 0; i <= nombersRemont-1; i++) {
      var newRemont = newRemontTemplate.cloneNode(true);
      addPicterCat(newRemont,remmonts[i],type); 
           };

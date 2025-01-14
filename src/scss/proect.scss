@@ -36,6 +36,7 @@ li {
 .main-line {
 	display: flex;
 	width: auto;
+	border: 2px solid rgb(62, 45, 214);
 }
 
 /*heder*/
@@ -45,6 +46,10 @@ li {
 	align-items: center;
 	background-color: white;
 	padding:0 7px;
+}
+.line li{
+
+margin-left: 10px;	
 }
 
 .line .line__der:nth-of-type(4) {
@@ -182,7 +187,8 @@ section {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1120px) {
-	.main-line {
+	.main-line
+	 {
 		display: none;
 	}
 
@@ -207,7 +213,7 @@ section {
 		width: 0px;
 	}
 
-	.line .line__der:nth-of-type(4) {
+	.line__der:nth-of-type(4) {
 		width: 200px;
 	}
 
@@ -221,7 +227,7 @@ section {
 		order: 1;
 	}
 	
-	.line .line__repair
+	.line__repair
 	 {
 		margin-left: auto;
 	}
