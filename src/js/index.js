@@ -1,7 +1,7 @@
 
 import '../scss/main.scss';
 import '../scss/proect.scss';
-/*import '../scss/mobilMenu.scss';*/
+import '../scss/mobilMenu.scss';
 import '../scss/block2.scss';
 import '../scss/block3.scss';
 

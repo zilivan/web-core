@@ -185,6 +185,18 @@ section {
 	height: 100%;
 }
 
+
+
+@media screen and (min-width: 1121px)  {
+	main
+	 {
+		position: absolute;
+		left:306px;
+	}
+}
+
+
+
 @media screen and (min-width:1121px) {
 
 	.nav-list__item:nth-of-type(3),
