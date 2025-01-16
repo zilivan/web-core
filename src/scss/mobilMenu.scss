@@ -26,7 +26,6 @@
 	justify-content: flex-start;
 	width: 320px;
 	height:676;
-	border: 0px solid red;
     position: absolute;
 	
 }
@@ -34,13 +33,12 @@
 /*heder*/
 .upperMenu{
 	display: flex;
-	width: 320px;
+	width: auto;
 	justify-content: flex-start;
 	align-items: center;
 	background-color: white;
 	padding:0px;
 	margin-top:18px;
-	border: 0px solid rgb(141, 214, 45);
 }
 .upperMenu__burger{
 margin-left:16px
@@ -102,6 +100,7 @@ li.backMenu__nav-list {
 	flex-wrap:wrap;
 	margin-left:16px;
 	margin-top: 32px;
+	
  }
  .endMenu__chat,
 .endMenu__profile{

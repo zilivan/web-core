@@ -82,7 +82,8 @@ h1 {
 
 h1::before {
 	content: ".";
-	margin: 0 3px;
+	margin-left: -24px;
+	margin-right: 10px;
 	color: #B8FFEC;
 	background-color: #B8FFEC;
 }
@@ -151,6 +152,12 @@ main {
 	width: 180px;
 }
 
+.block1 h2 {
+	font-family: 'TTLakes', sans-serif;
+	font-weight: normal;
+     margin-left: 10px;
+	 color: #7E7E82;
+}
 section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -187,13 +194,7 @@ section {
 
 
 
-@media screen and (min-width: 1121px)  {
-	main
-	 {
-		position: absolute;
-		left:306px;
-	}
-}
+
 
 
 
@@ -203,9 +204,15 @@ section {
 	.line {
 		display: none;
 	}
+	main
+	{
+	   position: absolute;
+	   left:330px;
+   }
+
 }
 
-@media screen and (min-width: 769px) and (max-width: 1120px) {
+@media screen and (min-width: 360px) and (max-width: 1120px) {
 	.main-line
 	 {
 		display: none;
@@ -223,17 +230,13 @@ section {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
 
 	/*heder*/
 	.scrin__360{
 		display: none;	
 	}
 	
-	
-
-	
-
 	.main-line {
 		display: none;
 	}
