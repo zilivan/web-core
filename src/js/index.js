@@ -5,10 +5,11 @@ import '../scss/mobilMenu.scss';
 import '../scss/block2.scss';
 import '../scss/block3.scss';
 
+
 const brends = ["hp","aplle","aser","bosh","samsung","hp","aser","bosh","aser","bosh","samsung","hp"];
 const remmonts = ["Ремонт ноутбуков","Ремонт планшетов","Ремонт ПК","Ремонт мониторов","Ремонт зонтов","Ремонт часов","Ремонт холдильников","Ремонт телефонов"];
-const nombersRemont = 4;
-const nombersBrand = 8;
+var nombersRemont = 4;
+var nombersBrand = 8;
 var cats = document.querySelector('.cats');
 var remonts = document.querySelector('.remonts');
 
@@ -176,9 +177,13 @@ allCheckPicter.addEventListener('change', function () {
           viewPicter ("slidRemont");
              });
         
-    
-viewPicter ("brand");
-viewPicter ("slidBrand"); 
-viewPicter ("remont");
-viewPicter ("slidRemont"); 
-        
+    viewPicter ("brand");
+    viewPicter ("slidBrand"); 
+    viewPicter ("remont");
+    viewPicter ("slidRemont"); 
+
+
+
+
+
+

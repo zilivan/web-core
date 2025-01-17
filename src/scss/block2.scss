@@ -22,7 +22,7 @@ body {
 }
 .block2{
 	width: 94%;
-	border: 2px solid rgb(141, 214, 45);
+	
 	background-color:  rgba(248, 248, 248, 1);
 	margin-left: 24px;
 	margin-right: 24px;
@@ -51,7 +51,7 @@ body {
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
-	border: 0px solid rgb(106, 32, 224);
+	overflow: hidden;
 }
 .cat,
 .remont
@@ -151,4 +151,14 @@ body {
 .block2{
 	width: 320px;
 }
+}
+@media screen and (max-width: 600px)  {
+	
+	.cats,
+    .remonts
+         {
+	
+	flex-wrap:nowrap;
+               }
+
 }
