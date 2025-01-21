@@ -1,3 +1,7 @@
+$tabl-th :rgba(126, 126,  130,1);
+$tadle-background:rgba(255, 255, 255, 1);
+$key-call:#FF3E79;
+$text-grey: #7E7E82;
 
 body {
 	font-family: 'TTLakes', sans-serif;
@@ -41,7 +45,7 @@ th {
 	
     height:16px;
     text-align: start;
-    color: rgba(126, 126, 130, 1); 
+    color: $tabl-th; 
     padding-left:16px;
     padding-top:31px;
     padding-bottom:16px;
@@ -52,7 +56,7 @@ td {
     padding-left:16px;
 	padding-top: 16px;
     padding-bottom:16px;
-    background-color:  rgba(255, 255, 255, 1);
+    background-color: $tadle-background;
 	
 }
 
@@ -64,8 +68,7 @@ td {
 	width: 119px;	
 	margin:0px 0px;
 	justify-content:space-between;
-	border: 0px solid rgb(32, 224, 48);
-	background-color: #FF3E79;
+	background-color: $key-call;
     border-radius: 20px;
 	margin-right:16px;
 	
@@ -87,7 +90,6 @@ td {
 	margin: 0;
     height:0px;
 	width: 100%;	
-    border: 0px solid #e90f0f;
     margin-left: 16px;
     padding-left: 16px;
     border-radius: 20px;
@@ -176,7 +178,7 @@ td {
 	margin-top: 32px;
 	line-height: 16px;
 	font-size: 14px;
-	color:#7E7E82;
+	color:$text-grey;
 }
 
 

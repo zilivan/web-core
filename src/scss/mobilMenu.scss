@@ -1,25 +1,5 @@
-  /*@font-face {
-	font-family: 'TTLakes';
-	font-style: normal;
-	font-weight: normal;
-	src: local('TTLakes'),
-		url(../fonts/TTLakes-Regular.woff) format('woff');
-
-}
-
-Жирный 
-@font-face {
-	font-family: 'TTLakes';
-	font-style: normal;
-	font-weight: bold;
-	src: local('TTLakes'),
-		url(../fonts/TTLakes-Bold.woff) format('woff');
-}
-
-   body {
-	font-family: 'TTLakes', sans-serif;
-	border: 0px dotted rgb(98, 0, 255);
-}*/
+$text-black: black;
+$background-heder: white;
 .backMenu{
 	display: flex;
 	flex-direction: column;
@@ -36,7 +16,7 @@
 	width: auto;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: white;
+	background-color: $background-heder;
 	padding:0px;
 	margin-top:18px;
 }
@@ -54,9 +34,6 @@ margin-left:16px
 
 
 /*main */
-.backMenu__main-nav{
-	border: 0px solid rgb(84, 116, 87);
-}
 
 ul.backMenu__nav-list,
 li.backMenu__nav-list, a{
@@ -66,7 +43,7 @@ li.backMenu__nav-list, a{
 	text-decoration-style: none;
 }
 ul.backMenu__nav-list{
-	border: 0px solid rgb(84, 116, 87);
+	
 	margin-top: 22px;
 }
 
@@ -78,17 +55,17 @@ li.backMenu__nav-list a{
 	font-weight: normal;
 	font-size: 16px;
 	height:16px;
-	color: black;
+	color: $text-black;
 	margin-left: 16px;
 	margin-top: auto;
 	margin-bottom: auto;
-	border: 0px solid rgb(223, 219, 16);
+	
 	text-align:center;
 }
 li.backMenu__nav-list {
 	display: flex;
 	height:32px;
-	border: 0px solid rgb(78, 16, 223);
+	
 }
 
 
@@ -129,7 +106,7 @@ margin-left:16px;
 .footerLang a {
 	text-decoration: none;
 	font-weight: bold;
-	color:black;
+	color:$text-black;
 }
 
 /*transform*/

@@ -1,6 +1,24 @@
 $grey-ligt : #e3e3ec;
+$grey-green-ligt:#097e5f;
+$back-ground-main: #F8F8F8;//main background
+$green-light:#B8FFEC;//befor H1
+$text-black: black;
+$text-grey: #7E7E82;
+$border-navlist:#B8FFEC;
+$background-heder: white;
+$background-navlist_activ:white;
 
 
+
+
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: medium;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Medium.woff) format('woff');
+
+}
 
 @font-face {
 	font-family: 'TTLakes';
@@ -24,7 +42,7 @@ body {
 	font-family: 'TTLakes', sans-serif;
 }
 .block1{
-	border: 0px solid #097e5f;
+	border: 0px solid $grey-green-ligt;
 	width: 94%;
 	margin-left: 24px;
 	margin-right: 24px;
@@ -47,7 +65,7 @@ li {
 .line {
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
+	background-color: $background-heder;
 	padding:0 7px;
 }
 .line__item{
@@ -84,12 +102,12 @@ h1::before {
 	content: ".";
 	margin-left: -24px;
 	margin-right: 10px;
-	color: #B8FFEC;
-	background-color: #B8FFEC;
+	color: $green-light;
+	background-color: $green-light;
 }
 
 main {
-	background-color: #F8F8F8;
+	background-color: $back-ground-main;
 }
 
 .main-line a {
@@ -98,7 +116,7 @@ main {
 	padding: 5px 10px;
 	margin: 5px;
 	text-decoration: none;
-	color: black;
+	color: $text-black;
 	height: 24px;
 	align-self: center;
 }
@@ -108,32 +126,45 @@ main {
 	align-self: center;
 }
 
-.nav-list {
+.nav-list{
+
 	display: flex;
 }
 
+
+.nav-list__item 
+{
+	
+	box-sizing: border-box;
+}
+
 .nav-list__item a {
+	
 	font-size: 18px;
 	padding: 3px 7px;
-	margin: 0 5px;
+	margin: 0 0px;
 	text-decoration: none;
-	color: #7E7E82;
+	color: $text-grey;
 	height: 24px;
 	text-align: center;
+	border-radius: 5px;
+	border: 2px solid $back-ground-main;
+	
 }
 
 .nav-list__item:hover {
-	background-color: white;
-	border-radius: 10%;
-	border: 1px solid #B8FFEC;
+	background-color: $background-navlist_activ;
+	border-color: $border-navlist;
 }
 
 .nav-list li:nth-child(1) a {
 	width: 210px;
+
 }
 
 .nav-list li:nth-child(2) a {
-	width: 240px;
+	width: 250px;
+	
 }
 
 .nav-list li:nth-child(3) a {
@@ -172,13 +203,13 @@ section {
 	margin-left: 5px;
 	margin-top: 5px;
 	margin-right: 20px;
-	color: #7E7E82;
+	color: $text-grey;
 	overflow: hidden;
 }
 
 .text-text__link a {
 	text-decoration: none;
-	color: black;
+	color: $text-black;
 	font-size:18px ;
 }
 
