@@ -1,0 +1,204 @@
+$grey-ligt : #e3e3ec;
+$grey-green-ligt:#097e5f;
+$back-ground-main: #F8F8F8;//main background
+$green-light:#B8FFEC;//befor H1
+$text-black: black;
+$text-grey: #7E7E82;
+$border-navlist:#B8FFEC;
+$background-heder: white;
+$background-navlist_activ:white;
+$key-call:#FF3E79;
+
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: medium;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Medium.woff) format('woff');
+
+}
+
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: normal;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Regular.woff) format('woff');
+
+}
+
+/* Жирный */
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: bold;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Bold.woff) format('woff');
+}
+
+.madal-feedBack,
+.madal-call
+
+{
+	display: none;
+	width: 440px;
+	padding:20px;
+	
+}
+
+.madal-feedBack__close,
+.madal-call__close
+{
+position: relative;
+margin: -8px;
+padding: 0;
+top:15px;
+right: 90px;
+height: 5px;
+
+}
+
+form input,
+form textarea{
+	width: 376px;
+	height: 48px;
+	margin-bottom: 16px;
+	border: 1px solid  $grey-ligt;     // $text-grey
+	border-radius: 10px;
+	color: $text-grey;
+	font-family: 'TTLakes', sans-serif;
+	font-weight: medium;
+	padding-left:20px ;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+form textarea{
+	height: 118px;
+}
+.madal-feedBack__text
+{
+	color: $text-grey;
+	font-family: 'TTLakes', sans-serif;
+	font-weight: medium;
+	font-size: 14px;
+	height: 16px;
+}
+.madal-feedBack__text span
+{
+	color:$key-call;	
+}
+.madal-feedBack__call
+{
+	
+float: right;
+margin-top: 60px;
+}
+
+@media screen and (min-width:360px) {
+	.madal-feedBack,
+	.madal-call
+	{
+		display: none;
+		width: 440px;
+		padding:20px;
+	}
+
+
+
+   .madal-feedBack.activ 
+   {
+	display: block;
+	position: absolute;
+	left:300px;
+   }
+   main.activ
+   {
+	  position: absolute;
+	  left:0px;
+	  width: 900px;
+	  opacity: 0.01;
+  }
+ .back_menu.activ {
+	display: none;
+
+}
+
+.madal-call.activ 
+   {
+	display: block;
+	position: absolute;
+	left:300px;
+   }
+
+}
+
+
+
+
+@media screen and (min-width:1121px) {
+
+	main
+	{
+		position: absolute;
+	   left:330px;
+   }
+
+   .madal-feedBack.activ 
+   {
+	left:900px;
+   }
+  
+ .back_menu.activ {
+	display: none;
+}
+.madal-call.activ 
+   {
+	left:900px;
+   }
+
+
+}
+@media screen and (max-width:360px) {
+	.madal-feedBack,
+	.madal-call
+	{
+		display: none;
+		width: 320px;
+		padding:20px;
+	}
+	.madal-feedBack__close,
+    .madal-call__close
+         {
+           position: static;
+           margin-bottom: 50px;
+
+}
+
+	.madal-feedBack.activ 
+	{
+	 display: block;
+	 position: absolute;
+	 left:0px;
+	}
+	main.activ
+	{
+	   position: absolute;
+	   left:0px;
+	   width: 900px;
+	   opacity: 0.01;
+   }
+  .back_menu.activ {
+	 display: none;
+ 
+ }
+ 
+ .madal-call.activ 
+	{
+	 display: block;
+	 position: absolute;
+	 left:0px;
+	}
+	
+ 
+ }

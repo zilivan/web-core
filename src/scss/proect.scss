@@ -7,7 +7,7 @@ $text-grey: #7E7E82;
 $border-navlist:#B8FFEC;
 $background-heder: white;
 $background-navlist_activ:white;
-
+$key-call:#FF3E79;
 
 
 
@@ -223,74 +223,27 @@ section {
 	height: 100%;
 }
 
-.madal-feedBack {
-	display: none;
-	width: 440px;
-	padding:20px;
-	
-}
-form input{
-	width: 376px;
-	height: 48;
-	margin-bottom: 16px;
-}
-form textarea{
-	width: 376px;
-	height: 118;
-	margin-bottom: 16px;
-}
-
 
 
 @media screen and (min-width:1121px) {
-
 	.nav-list__item:nth-of-type(3),
 	.line {
 		display: none;
 	}
-	main
-	{
-	   position: absolute;
-	   left:330px;
-   }
-
-   .madal-feedBack.activ 
-   {
-	display: block;
-	position: absolute;
-	left:900px;
-	border: 3px solid red;
-
-   }
-   main.activ
-   {
-	  position: absolute;
-	  left:0px;
-	  width: 900px;
-	  opacity: 0.01;
-  }
- .back_menu.activ {
-	display: none;
-
 }
 
 
 
-}
 
 @media screen and (min-width: 360px) and (max-width: 1120px) {
 	.main-line
 	 {
 		display: none;
 	}
-
-	
-
 	.nav-list li:first-child,
 	.nav-list li:nth-child(5) {
 		display: none;
 	}
-
 	.text-text__articl {
 		height: 180px;
 	}

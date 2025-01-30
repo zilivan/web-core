@@ -11,7 +11,7 @@
 <body>
     
 
-    <main class="acti">
+    <main class="main">
     
         <div class="line">
         <div class="line__item">
@@ -54,11 +54,11 @@
         <div class="tittle">
             <h1> Услуги и сервисы</h1>
             <ul class="main-line">
-                <li class="main-line mamain-line__repair">
+                <li class="main-line main-line__repair">
                     <a href="#">Оставить заявку</a><img src="./img/repair.png" alt="scrin">
                 </li>
                 <li class="main-line main-line__checkstatus">
-                    <a href="#">Оставить заявку</a><img src="./img/repair.png" alt="scrin">
+                    <a href="#">Оставить заявку</a><img src="./img/checkstatus.png" alt="scrin">
                 </li>
             </ul>
         </div>
@@ -157,7 +157,7 @@
                     <td>Бесплатно</td>
                     <td>30 мин</td>
                     <td class="top-right">
-                        <div class="call">
+                        <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -174,7 +174,7 @@
                     <td>1 000 ₽</td>
                     <td>30-120 мин</td>
                     <td>
-                        <div class="call">
+                        <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -191,7 +191,7 @@
                     <td>1 000 ₽</td>
                     <td>30-120 мин</td>
                     <td>
-                        <div class="call">
+                        <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -209,7 +209,7 @@
                     <td>1 000 ₽</td>
                     <td>30-120 мин</td>
                     <td>
-                        <div class="call">
+                        <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -226,7 +226,7 @@
                     <td>1 000 ₽</td>
                     <td>30-120 мин</td>
                     <td class="bot-right">
-                        <div class="call">
+                        <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -247,7 +247,7 @@
                     <div class="tabl-srok">Срок</div>
                     <div class="tabl-zakaz">
                     <div>30 мин</div>
-                    <div class="call">
+                    <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -264,7 +264,7 @@
                     <div class="tabl-srok">Срок</div>
                     <div class="tabl-zakaz">
                     <div>30 мин</div>
-                    <div class="call">
+                    <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -281,7 +281,7 @@
                     <div class="tabl-srok">Срок</div>
                     <div class="tabl-zakaz">
                     <div>30 мин</div>
-                    <div class="call">
+                    <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -298,7 +298,7 @@
                     <div class="tabl-srok">Срок</div>
                     <div class="tabl-zakaz">
                     <div>30 мин</div>
-                    <div class="call">
+                    <div class="call call__click">
                         <div class="call__text">Заказать </div>
                         <div class="call__goside">
                         <img src="./img/goside.png" alt="scrin">
@@ -380,9 +380,8 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </main>
 
-    <section class="back_menu acti">
+    <section class="back_menu">
         <div class="backMenu">
-      
             <div class="upperMenu">
                 <div class="upperMenu__burger">
                     <a href="#"><img src="./img/burgerx.png" alt="scrin"></a>
@@ -436,27 +435,59 @@
             </div>
         </section>
 
-        <section class="madal-feedBack acti">
-            <div class="close">
+        <section class="madal-feedBack a">
+            <div class="madal-feedBack__close">
                 <a href="#"><img src="./img/close.png" alt="scrin"></a>
             </div>
         <h1>
             Обратная связь
         </h1>
-        <form>
+        <form action="" method="get">
             <input type="text" name="search" placeholder="Имя">
             <input type="tel" name="search" placeholder="Телефон">
             <input type="email" name="search" placeholder="Электронная почта">
             <textarea rows="10" name ="text" placeholder="Сообщение">Сообщение</textarea>
-            <p>
+            <p class="madal-feedBack__text">
                 Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span>
-
             </p>
-            <input type="button" value="Отправить">
+            <div>
+              <label class="madal-feedBack__call" for="send">
+                <div class="call">
+                <div class="call__text">Отправить </div>
+                <div class="call__goside">
+                <img src="./img/goside.png" alt="scrin">
+               </div>
+            </div></label>  
+            <input type="submit" name="send"  id="send" style="display: none">
+        </div>
         </form>
         
         </section>
-
+        <section class="madal-call">
+            <div class="madal-call__close">
+                <a href="#"><img src="./img/close.png" alt="scrin"></a>
+            </div>
+        <h1>
+            Заказать звонок
+        </h1>
+        <form action="" method="get">
+            <input type="tel" name="search" placeholder="Телефон">
+            <p class="madal-feedBack__text">
+                Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span>
+            </p>
+            <div>
+              <label class="madal-feedBack__call" for="send">
+                <div class="call">
+                <div class="call__text">Отправить </div>
+                <div class="call__goside">
+                <img src="./img/goside.png" alt="scrin">
+               </div>
+            </div></label>  
+            <input type="submit" name="send"  id="send" style="display: none">
+        </div>
+        </form>
+        
+        </section>
 
 </body>
 

@@ -155,7 +155,7 @@ transition:transform 0.5s,
 	}
 }
 
-@media screen and (min-width: 520px)  {
+@media screen and (min-width: 360px)  {
 	.backMenu{
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
 	height:1024px;
@@ -172,10 +172,38 @@ transition:transform 0.5s,
 
 		
 }
-@media screen and (min-width: 1119px)  {
+  @media screen and (min-width: 1119px)  {
 
 	.backMenu{
 		box-shadow: 0px 0px 0px 0px #fff;
 
 }
 }
+@media screen and (min-width: 360px) and (max-width: 1120px) {
+	body .backMenu.onBurger {
+		display: flex;
+		margin-top: -15px;
+		}
+	
+		main.disable
+		{
+			position: absolute;
+		   left:330px;
+		   opacity: 0.01;
+	   }
+
+
+	}
+	@media screen and (max-width: 360px) {
+
+		body .backMenu.onBurger {
+			display: flex;
+			margin-top: -15px;
+			}
+
+		main.disable
+		{
+			display: none;
+	   }
+
+	}
