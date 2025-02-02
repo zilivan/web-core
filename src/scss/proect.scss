@@ -189,10 +189,11 @@ main {
      margin-left: 10px;
 	 color: #7E7E82;
 }
-section {
+section.text {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 0px;
+	
 }
 
 .text-text__articl {
@@ -256,6 +257,10 @@ section {
 		display: none;	
 	}
 	
+	section.text {
+		
+		grid-template-columns: 1fr;
+	}
 	.main-line {
 		display: none;
 	}
