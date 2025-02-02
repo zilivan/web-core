@@ -159,7 +159,7 @@ main {
   margin-left: 10px;
   color: #7E7E82; }
 
-section {
+section.text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0px; }
@@ -206,6 +206,8 @@ section {
   /*heder*/
   .scrin__360 {
     display: none; }
+  section.text {
+    grid-template-columns: 1fr; }
   .main-line {
     display: none; }
   .nav-list li:first-child,
@@ -219,7 +221,6 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   width: 320px;
-  height: 676;
   position: absolute; }
 
 /*heder*/
@@ -369,7 +370,9 @@ a img {
   main.disable {
     position: absolute;
     left: 330px;
-    opacity: 0.01; } }
+    opacity: 0.01;
+    height: 1000px;
+    Overflow: hidden; } }
 
 @media screen and (max-width: 360px) {
   body .backMenu.onBurger {
