@@ -193,7 +193,7 @@ section.text {
   .line {
     display: none; } }
 
-@media screen and (min-width: 360px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1120px) {
   .main-line {
     display: none; }
   .nav-list li:first-child,
@@ -202,7 +202,7 @@ section.text {
   .text-text__articl {
     height: 180px; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   /*heder*/
   .scrin__360 {
     display: none; }
@@ -344,11 +344,7 @@ a img {
   color: grey; }
 
 /*screen*/
-@media screen and (min-width: 320px) and (max-width: 360px) {
-  .upperMenu {
-    width: 360px; } }
-
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 768px) {
   .backMenu {
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
     height: 1024px; }
@@ -363,7 +359,7 @@ a img {
   .backMenu {
     box-shadow: 0px 0px 0px 0px #fff; } }
 
-@media screen and (min-width: 360px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1120px) {
   body .backMenu.onBurger {
     display: flex;
     margin-top: -15px; }
@@ -374,7 +370,7 @@ a img {
     height: 1000px;
     Overflow: hidden; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   body .backMenu.onBurger {
     display: flex;
     margin-top: -15px; }
@@ -475,9 +471,10 @@ body {
   display: none; }
 
 /*screen*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .slaid {
-    display: block; }
+    display: block;
+    border: 2px solid red; }
   .cats,
   .remonts,
   .footerMenu {
@@ -485,7 +482,7 @@ body {
   .block2 {
     width: 320px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .cats,
   .remonts {
     flex-wrap: nowrap; } }
@@ -640,9 +637,12 @@ td {
   font-size: 14px;
   color: #7E7E82; }
 
-@media screen and (max-width: 360px) {
-  .slaid {
-    display: block; }
+@media screen and (max-width: 768px) {
+  .slaid-cats,
+  .slaid-remonts,
+  .slaid-tab {
+    display: block;
+    border: 2px solid #200ae2; }
   table {
     display: none; }
   .block3 {
@@ -721,7 +721,7 @@ form textarea {
   float: right;
   margin-top: 60px; }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 768px) {
   .madal-feedBack,
   .madal-call {
     display: none;
@@ -754,7 +754,7 @@ form textarea {
   .madal-call.activ {
     left: 900px; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .madal-feedBack,
   .madal-call {
     display: none;
