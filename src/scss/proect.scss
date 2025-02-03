@@ -236,7 +236,7 @@ section.text {
 
 
 
-@media screen and (min-width: 360px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1120px) {
 	.main-line
 	 {
 		display: none;
@@ -250,7 +250,7 @@ section.text {
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
 
 	/*heder*/
 	.scrin__360{
