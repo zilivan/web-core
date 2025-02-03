@@ -119,9 +119,12 @@ body {
 
 @media screen and (max-width: 768px)  {
 
-.slaid	{
-		display: block;	
-	}
+.slaid
+
+	{
+		display: block;
+		border: 2px solid red;	
+	};
 .cats, 
 .remonts,
 .footerMenu{
@@ -131,6 +134,8 @@ body {
 	width: 320px;
 }
 }
+
+
 @media screen and (max-width: 1024px)  {
 	
 	.cats,
