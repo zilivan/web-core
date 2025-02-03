@@ -473,8 +473,7 @@ body {
 /*screen*/
 @media screen and (max-width: 768px) {
   .slaid {
-    display: block;
-    border: 2px solid red; }
+    display: block; }
   .cats,
   .remonts,
   .footerMenu {
@@ -641,8 +640,7 @@ td {
   .slaid-cats,
   .slaid-remonts,
   .slaid-tab {
-    display: block;
-    border: 2px solid #200ae2; }
+    display: block; }
   table {
     display: none; }
   .block3 {
