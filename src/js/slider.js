@@ -31,11 +31,16 @@ var swiperWrapperRemont = document.querySelector('.rem');
 
 
 var swiper = new Swiper(".mySwiper", {
+     slidesPerView:1,
+     spaceBetween:10,
+     enabled:true,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+     
     },
   });
+
   
 var addPicterCat = function (item,brend,type) {
  

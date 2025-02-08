@@ -1,10 +1,10 @@
-
+$back-ground-main: #F8F8F8;//main background
 
 body {
 	font-family: 'TTLakes', sans-serif;
 }
 .block2{
-	width: 94%;
+	width: 100%;
 	margin-left: 24px;
 	margin-right: 24px;
 }
@@ -38,16 +38,20 @@ body {
  {
 	display:flex;
 	height:72px;
-	width: 224px;	
+	min-width: 224px;	
 	margin:24px 16px;
 	justify-content:space-between;
-	background-color:  rgba(255, 255, 255, 1);
+	background-color:rgba(255, 255, 255, 1);
+	
 }
 .remont{
 	height:160px;
 }
 
- 
+.swiper-slide__cat,
+.swiper-slide__remont{
+	background-color:$back-ground-main;
+}
 
 .bitmap{
 	
@@ -82,7 +86,7 @@ body {
 	margin-left: 16px;
 	margin-bottom: 34px;
 	justify-content:space-between;
-	
+
 }
 
 .line__expand,
@@ -130,9 +134,9 @@ body {
 .footerMenu{
 	display: none;
 }
-.block2{
+/*.block2{
 	width: 320px;
-}
+}*/
 }
 
 

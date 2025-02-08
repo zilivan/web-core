@@ -110,7 +110,8 @@ margin-top: 60px;
    {
 	display: block;
 	position: absolute;
-	left:300px;
+	left:auto;
+	right: 0;
    }
    main.activ
    {
@@ -175,12 +176,7 @@ margin-top: 60px;
 
 }
 
-	.madal-feedBack.activ 
-	{
-	 display: block;
-	 position: absolute;
-	 left:0px;
-	}
+	
 	main.activ
 	{
 	   position: absolute;

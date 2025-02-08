@@ -4,7 +4,7 @@ $back-ground-main: #F8F8F8;//main background
 $green-light:#B8FFEC;//befor H1
 $text-black: black;
 $text-grey: #7E7E82;
-$border-navlist:#B8FFEC;
+$border-navlist:#13d613;
 $background-heder: white;
 $background-navlist_activ:white;
 $key-call:#FF3E79;
@@ -40,12 +40,13 @@ $key-call:#FF3E79;
 
 body {
 	font-family: 'TTLakes', sans-serif;
+	width: 98%;
+	margin: 0 auto;
 }
 .block1{
-	border: 0px solid $grey-green-ligt;
-	width: 94%;
-	margin-left: 24px;
-	margin-right: 24px;
+	border: 1px solid $grey-green-ligt;
+	width: 100%;
+	
 }
 ul,
 li {
@@ -127,28 +128,37 @@ main {
 }
 
 .nav-list{
-
 	display: flex;
-}
+	justify-content: space-evenly ;
+	flex-wrap:nowrap;
+	flex-direction: row;
+	 overflow-x:auto;
+	
 
+}
 
 .nav-list__item 
 {
-	
+	display: inline-flex;
 	box-sizing: border-box;
+	border-radius: 5px;
+	height: 32px;
+   margin: 0 5px;
+   border: 1px solid  $back-ground-main;
 }
 
 .nav-list__item a {
-	
+	display: inline-block;
 	font-size: 18px;
 	padding: 3px 7px;
 	margin: 0 0px;
 	text-decoration: none;
 	color: $text-grey;
 	height: 24px;
+	//border: 2px solid  rgb(69, 7, 128);  //$back-ground-main;
 	text-align: center;
-	border-radius: 5px;
-	border: 2px solid $back-ground-main;
+	width: max-content;
+	
 	
 }
 
@@ -157,7 +167,7 @@ main {
 	border-color: $border-navlist;
 }
 
-.nav-list li:nth-child(1) a {
+/*.nav-list li:nth-child(1) a {
 	width: 210px;
 
 }
@@ -181,7 +191,7 @@ main {
 
 .nav-list li:nth-child(6) a {
 	width: 180px;
-}
+}*/
 
 .block1 h2 {
 	font-family: 'TTLakes', sans-serif;
@@ -227,9 +237,13 @@ section.text {
 
 
 @media screen and (min-width:1121px) {
-	.nav-list__item:nth-of-type(3),
+	//.nav-list__item:nth-of-type(3),
 	.line {
 		display: none;
+	}
+	.nav-list{
+	flex-wrap:wrap;
+	justify-content: flex-start ;
 	}
 }
 
@@ -241,12 +255,13 @@ section.text {
 	 {
 		display: none;
 	}
-	.nav-list li:first-child,
+	/*.nav-list li:first-child,
 	.nav-list li:nth-child(5) {
 		display: none;
-	}
+	}*/
 	.text-text__articl {
 		height: 180px;
+
 	}
 }
 
@@ -264,10 +279,10 @@ section.text {
 	.main-line {
 		display: none;
 	}
-	.nav-list li:first-child,
+	/*.nav-list li:first-child,
 	.nav-list li:nth-child(5) {
 		display: none;
-	}
+	}*/
 
 	section .back_menu {
 		display: block;
