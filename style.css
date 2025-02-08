@@ -38,13 +38,13 @@
   src: local("TTLakes"), url(./fonts/TTLakes-Bold.woff) format("woff"); }
 
 body {
-  font-family: 'TTLakes', sans-serif; }
+  font-family: 'TTLakes', sans-serif;
+  width: 98%;
+  margin: 0 auto; }
 
 .block1 {
-  border: 0px solid #097e5f;
-  width: 94%;
-  margin-left: 24px;
-  margin-right: 24px; }
+  border: 1px solid #097e5f;
+  width: 100%; }
 
 ul,
 li {
@@ -115,12 +115,22 @@ main {
   align-self: center; }
 
 .nav-list {
-  display: flex; }
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: auto; }
 
 .nav-list__item {
-  box-sizing: border-box; }
+  display: inline-flex;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 32px;
+  margin: 0 5px;
+  border: 1px solid #F8F8F8; }
 
 .nav-list__item a {
+  display: inline-block;
   font-size: 18px;
   padding: 3px 7px;
   margin: 0 0px;
@@ -128,31 +138,39 @@ main {
   color: #7E7E82;
   height: 24px;
   text-align: center;
-  border-radius: 5px;
-  border: 2px solid #F8F8F8; }
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
 .nav-list__item:hover {
   background-color: white;
-  border-color: #B8FFEC; }
+  border-color: #13d613; }
 
-.nav-list li:nth-child(1) a {
-  width: 210px; }
+/*.nav-list li:nth-child(1) a {
+	width: 210px;
+
+}
 
 .nav-list li:nth-child(2) a {
-  width: 250px; }
+	width: 250px;
+	
+}
 
 .nav-list li:nth-child(3) a {
-  width: 210px; }
+	width: 210px;
+}
 
 .nav-list li:nth-child(4) a {
-  width: 140px; }
+	width: 140px;
+}
 
 .nav-list li:nth-child(5) a {
-  width: 230px; }
+	width: 230px;
+}
 
 .nav-list li:nth-child(6) a {
-  width: 180px; }
-
+	width: 180px;
+}*/
 .block1 h2 {
   font-family: 'TTLakes', sans-serif;
   font-weight: normal;
@@ -189,16 +207,19 @@ section.text {
   height: 100%; }
 
 @media screen and (min-width: 1121px) {
-  .nav-list__item:nth-of-type(3),
   .line {
-    display: none; } }
+    display: none; }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: flex-start; } }
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
   .main-line {
     display: none; }
-  .nav-list li:first-child,
-  .nav-list li:nth-child(5) {
-    display: none; }
+  /*.nav-list li:first-child,
+	.nav-list li:nth-child(5) {
+		display: none;
+	}*/
   .text-text__articl {
     height: 180px; } }
 
@@ -210,9 +231,10 @@ section.text {
     grid-template-columns: 1fr; }
   .main-line {
     display: none; }
-  .nav-list li:first-child,
-  .nav-list li:nth-child(5) {
-    display: none; }
+  /*.nav-list li:first-child,
+	.nav-list li:nth-child(5) {
+		display: none;
+	}*/
   section .back_menu {
     display: block; } }
 
@@ -357,7 +379,8 @@ a img {
 
 @media screen and (min-width: 1119px) {
   .backMenu {
-    box-shadow: 0px 0px 0px 0px #fff; } }
+    box-shadow: 0px 0px 0px 0px #fff;
+    height: auto; } }
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
   body .backMenu.onBurger {
@@ -367,7 +390,7 @@ a img {
     position: absolute;
     left: 330px;
     opacity: 0.01;
-    height: 1000px;
+    height: 400px;
     Overflow: hidden; } }
 
 @media screen and (max-width: 768px) {
@@ -381,7 +404,7 @@ body {
   font-family: 'TTLakes', sans-serif; }
 
 .block2 {
-  width: 94%;
+  width: 100%;
   margin-left: 24px;
   margin-right: 24px; }
 
@@ -411,13 +434,17 @@ body {
 .remont {
   display: flex;
   height: 72px;
-  width: 224px;
+  min-width: 224px;
   margin: 24px 16px;
   justify-content: space-between;
   background-color: white; }
 
 .remont {
   height: 160px; }
+
+.swiper-slide__cat,
+.swiper-slide__remont {
+  background-color: #F8F8F8; }
 
 .bitmap {
   margin-left: 16px;
@@ -478,8 +505,9 @@ body {
   .remonts,
   .footerMenu {
     display: none; }
-  .block2 {
-    width: 320px; } }
+  /*.block2{
+	width: 320px;
+}*/ }
 
 @media screen and (max-width: 1024px) {
   .cats,
@@ -492,7 +520,7 @@ body {
 
 .block3,
 .footer {
-  width: 94%;
+  width: 100%;
   background-color: #f8f8f8;
   margin-left: 24px;
   margin-right: 24px; }
@@ -577,10 +605,11 @@ td {
 .tabl {
   display: block;
   height: 216px;
-  width: 260px;
+  max-width: 260px;
   background-color: white;
   text-align: start;
-  border-radius: 20px; }
+  border-radius: 20px;
+  border: 2px solid green; }
 
 .tabl-uslugi,
 .tabl-cena,
@@ -643,8 +672,9 @@ td {
     display: block; }
   table {
     display: none; }
-  .block3 {
-    width: 320px; }
+  /*.block3{
+	width: 320px;
+}*/
   .footer {
     flex-direction: column;
     text-align: center; }
@@ -728,7 +758,8 @@ form textarea {
   .madal-feedBack.activ {
     display: block;
     position: absolute;
-    left: 300px; }
+    left: auto;
+    right: 0; }
   main.activ {
     position: absolute;
     left: 0px;
@@ -762,10 +793,6 @@ form textarea {
   .madal-call__close {
     position: static;
     margin-bottom: 50px; }
-  .madal-feedBack.activ {
-    display: block;
-    position: absolute;
-    left: 0px; }
   main.activ {
     position: absolute;
     left: 0px;
