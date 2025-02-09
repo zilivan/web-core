@@ -5,17 +5,23 @@ $text-grey: #7E7E82;
 
 body {
 	font-family: 'TTLakes', sans-serif;
-	border: 0px dotted rgb(98, 0, 255);
+
 }
 .block3,
 .footer{
 	width: 100%;
-
 	background-color:  rgba(248, 248, 248, 1);
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 }
+.footer{
+	margin-left: 0px;
+	margin-right: 0px;
+	
+}
+
+
 table {
     border-collapse: collapse;
     height:100%;
@@ -110,8 +116,7 @@ td {
 	background-color:  rgba(255, 255, 255, 1);
 	text-align: start;
 	border-radius: 20px;
-	border:2px solid green;
-
+	
 }
 .tabl-uslugi,
 .tabl-cena,
@@ -131,10 +136,6 @@ td {
 	padding-bottom: 16px;
 }
 
-.swip-pad{
-
-	height:32px;	
-}
 	
 .block3-text>p{
 	
@@ -143,16 +144,16 @@ td {
 	line-height:20px;
 }
 .block3-text{
-	height:60px;
-	width: 421px;
-
+	height:80px;
+	max-width: 421px;
+	
 }
 .block3-src{
 	margin-top: 16px;
 	display:flex;
 	height:24px;
 	width: 326px;
-
+	
 	
 	justify-content:space-between;
 	text-align: center;
@@ -190,15 +191,10 @@ td {
 .slaid-tab	
        {
 		display: block;	
-		
 	}
-   
 table{
 	display: none;
 }
-/*.block3{
-	width: 320px;
-}*/
 .footer{
 
 	flex-direction: column;
@@ -209,7 +205,9 @@ margin-top: 16px;
 margin-left: auto;
 margin-right: auto;
 }
-
+.block3-text{
+	height:auto;
+	max-width: auto;
 }
-
+}
 

@@ -32,7 +32,7 @@ var swiperWrapperRemont = document.querySelector('.rem');
 
 var swiper = new Swiper(".mySwiper", {
      slidesPerView:1,
-     spaceBetween:10,
+     spaceBetween:50,
      enabled:true,
     pagination: {
       el: ".swiper-pagination",

@@ -16,6 +16,8 @@ var lineBurgerOn = document.querySelector('.line__burger');
 var lineBurgerOff = document.querySelector('.upperMenu__burger');
 var backMenuOn = document.querySelector('.backMenu');
 
+var line = document.querySelector('.line');
+var clickArea = document.querySelector('.clickArea');
 
 
 
@@ -61,6 +63,8 @@ lineBurgerOn.addEventListener('click', function (event) {
                           event.preventDefault();
                           main.classList.add('disable');
                           backMenuOn.classList.add('onBurger');
+                          line.classList.add('disable');
+                          
                                });              
 
 
@@ -68,7 +72,15 @@ lineBurgerOff.addEventListener('click', function (event) {
                     event.preventDefault();
                     main.classList.remove('disable');
                     backMenuOn.classList.remove('onBurger');
+                    line.classList.remove('disable');
             });              
+clickArea.addEventListener('click', function (event) { 
+                           event.preventDefault();
+                           main.classList.remove('disable');
+                           backMenuOn.classList.remove('onBurger');
+                           line.classList.remove('disable');
+                            });          
+                               
 
 
 lineRepair.addEventListener('click', function (event) { 
