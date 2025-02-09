@@ -40,13 +40,15 @@ $key-call:#FF3E79;
 
 body {
 	font-family: 'TTLakes', sans-serif;
-	width: 98%;
-	margin: 0 auto;
-}
-.block1{
-	border: 1px solid $grey-green-ligt;
 	width: 100%;
+	margin: 0;
 	
+}
+
+.block1{
+	
+	width: 96%;
+    margin: 0 auto 0 20px;
 }
 ul,
 li {
@@ -101,7 +103,7 @@ h1 {
 
 h1::before {
 	content: ".";
-	margin-left: -24px;
+	margin-left: -20px;
 	margin-right: 10px;
 	color: $green-light;
 	background-color: $green-light;
@@ -155,7 +157,6 @@ main {
 	text-decoration: none;
 	color: $text-grey;
 	height: 24px;
-	//border: 2px solid  rgb(69, 7, 128);  //$back-ground-main;
 	text-align: center;
 	width: max-content;
 	

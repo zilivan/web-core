@@ -6,6 +6,7 @@ $background-heder: white;
 	justify-content: flex-start;
 	width: 320px;
     position: absolute;
+	border: 2px solid red;
 	
 }
 
@@ -195,6 +196,10 @@ transition:transform 0.5s,
 
 	}
 	@media screen and (max-width: 768px) {
+		.backMenu{
+			width:100%;
+		}
+
 
 		body .backMenu.onBurger {
 			display: flex;
