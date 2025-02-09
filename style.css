@@ -390,7 +390,7 @@ a img {
   main.disable {
     position: absolute;
     left: 330px;
-    opacity: 0.51;
+    opacity: 0.01;
     height: 800px;
     Overflow: hidden; }
   .line {
