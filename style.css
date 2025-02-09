@@ -39,12 +39,12 @@
 
 body {
   font-family: 'TTLakes', sans-serif;
-  width: 98%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0; }
 
 .block1 {
-  border: 1px solid #097e5f;
-  width: 100%; }
+  width: 96%;
+  margin: 0 auto 0 20px; }
 
 ul,
 li {
@@ -92,7 +92,7 @@ h1 {
 
 h1::before {
   content: ".";
-  margin-left: -24px;
+  margin-left: -20px;
   margin-right: 10px;
   color: #B8FFEC;
   background-color: #B8FFEC; }
@@ -243,7 +243,8 @@ section.text {
   flex-direction: column;
   justify-content: flex-start;
   width: 320px;
-  position: absolute; }
+  position: absolute;
+  border: 2px solid red; }
 
 /*heder*/
 .upperMenu {
@@ -394,6 +395,8 @@ a img {
     Overflow: hidden; } }
 
 @media screen and (max-width: 768px) {
+  .backMenu {
+    width: 100%; }
   body .backMenu.onBurger {
     display: flex;
     margin-top: -15px; }
@@ -427,8 +430,7 @@ body {
 .remonts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  overflow: hidden; }
+  justify-content: space-between; }
 
 .cat,
 .remont {
@@ -509,7 +511,7 @@ body {
 	width: 320px;
 }*/ }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 769px) {
   .cats,
   .remonts {
     flex-wrap: nowrap; } }
