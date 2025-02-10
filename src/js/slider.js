@@ -30,9 +30,9 @@ var swiperWrapperRemont = document.querySelector('.rem');
 
 
 
-var swiper = new Swiper(".mySwiper", {
-     slidesPerView:1,
-     spaceBetween:50,
+var swiperCat = new Swiper(".mySwiperCat", {
+     slidesPerView:2,
+     spaceBetween:10,
      enabled:true,
     pagination: {
       el: ".swiper-pagination",
@@ -40,7 +40,7 @@ var swiper = new Swiper(".mySwiper", {
      
     },
   });
-  var swiper1 = new Swiper(".mySwiper1", {
+  var swiperTable = new Swiper(".mySwiperTable", {
     slidesPerView:2,
     spaceBetween:10,
     enabled:true,
@@ -50,6 +50,16 @@ var swiper = new Swiper(".mySwiper", {
     
    },
  });
+ var swiperRemont = new Swiper(".mySwiperRemont", {
+  slidesPerView:2,
+  spaceBetween:10,
+  enabled:true,
+ pagination: {
+   el: ".swiper-pagination",
+   dynamicBullets: true,
+  
+ },
+});
   
 var addPicterCat = function (item,brend,type) {
  

@@ -51,7 +51,11 @@ madalFeedBackClose.addEventListener('click', function (event) {
 
 var callClicks = () => {
                for ( let i = 0;i < callClick.length; i++) {
-          callClick[i].addEventListener('click', function (event) { 
+          callClick[i].addEventListener('click', function (event) {
+             window.scrollTo({
+              top:0
+              //behavior:"smooth"
+             });
             madalCallOpen(event);
 
           });

@@ -2,7 +2,7 @@ $tabl-th :rgba(126, 126,  130,1);
 $tadle-background:rgba(255, 255, 255, 1);
 $key-call:#FF3E79;
 $text-grey: #7E7E82;
-
+$back-ground-main: #F8F8F8;//main background
 body {
 	font-family: 'TTLakes', sans-serif;
 
@@ -112,7 +112,7 @@ td {
 .tabl{
 	display: block;
 	height:216px;
-	max-width: 260px;
+	width: 260px;
 	background-color:  rgba(255, 255, 255, 1);
 	text-align: start;
 	border-radius: 20px;
@@ -180,8 +180,13 @@ td {
 	font-size: 14px;
 	color:$text-grey;
 }
+.pad{
+	height:32px;
 
-
+}
+.swiper-slide__tabl{
+	background: $back-ground-main;
+}
 
 
 @media screen and (max-width: 768px)  {
