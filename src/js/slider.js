@@ -31,7 +31,7 @@ var swiperWrapperRemont = document.querySelector('.rem');
 
 
 var swiperCat = new Swiper(".mySwiperCat", {
-     slidesPerView:2,
+     slidesPerView:1,
      spaceBetween:10,
      enabled:true,
     pagination: {
@@ -41,7 +41,7 @@ var swiperCat = new Swiper(".mySwiperCat", {
     },
   });
   var swiperTable = new Swiper(".mySwiperTable", {
-    slidesPerView:2,
+    slidesPerView:1,
     spaceBetween:10,
     enabled:true,
    pagination: {
@@ -51,7 +51,7 @@ var swiperCat = new Swiper(".mySwiperCat", {
    },
  });
  var swiperRemont = new Swiper(".mySwiperRemont", {
-  slidesPerView:2,
+  slidesPerView:1,
   spaceBetween:10,
   enabled:true,
  pagination: {
