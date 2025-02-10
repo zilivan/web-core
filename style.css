@@ -614,7 +614,7 @@ td {
 .tabl {
   display: block;
   height: 216px;
-  max-width: 260px;
+  width: 260px;
   background-color: white;
   text-align: start;
   border-radius: 20px; }
@@ -669,6 +669,12 @@ td {
   line-height: 16px;
   font-size: 14px;
   color: #7E7E82; }
+
+.pad {
+  height: 32px; }
+
+.swiper-slide__tabl {
+  background: #F8F8F8; }
 
 @media screen and (max-width: 768px) {
   .slaid-cats,
