@@ -13,43 +13,24 @@
     <main class="main">
         
         <div class="line">
-        <div class="line__item">
-            <div class="line__burger">
-                <a href="#"><img src="./img/burger.png" alt="scrin"></a>
-            </div>
-            <div class="line__der"></div>
-
-            <div class="line__group">
-                <img src="./img/Group.png" alt="scrin">
-            </div>
-
-        </div>    
+           <div class="line__item">
+                <a class="line__burger" href="#"><img src="./img/burger.png" alt="scrin"></a>
+                <div class="line__der__burger"></div>
+                <img class="line__group" src="./img/Group.png" alt="scrin">
+           </div>    
           
-        <div class="line__item">
-            <div class="line__call scrin__360">
-                <a href="#"><img src="./img/call.png" alt="scrin"></a>
-            </div>
-            <div class="line__chat scrin__360">
-                <a href="#"><img src="./img/chat.png" alt="scrin"></a>
-            </div>
-            <div class="line__profile scrin__360">
-                <a href="#"><img src="./img/profile.png" alt="scrin"></a>
-            </div>
-              
-            <div class="line__der"></div>
-            <div class="line__checkstatus">
-                <a href="#"><img src="./img/checkstatus.png" alt="scrin"></a>
-            </div>
-            <div class="line__repair">
-                <a href="#"><img src="./img/repair.png" alt="scrin"></a>
-            </div>    
-        </div> 
+           <div class="line__item">
+                <a class="line__call scrin__360" href="#"><img src="./img/call.png" alt="scrin"></a>
+                <a class="line__chat scrin__360" href="#"><img src="./img/chat.png" alt="scrin"></a>
+                <a class="line__profile scrin__360" href="#"><img src="./img/profile.png" alt="scrin"></a>
+                <div class="line__der"></div>
+                <a class="line__repair" href="#"><img src="./img/repair.png" alt="scrin"></a>   
+                <a class="line__checkstatus" href="#"><img src="./img/checkstatus.png" alt="scrin"></a>
+           </div> 
     </div>
-    <div class="clickArea">
+    
         <div class="block1">
-            
-        <div class="tittle">
-            <h1> Услуги и сервисы</h1>
+            <h1 class="tittle"> Услуги и сервисы</h1>
             <ul class="main-line">
                 <li class="main-line main-line__repair">
                     <a href="#">Оставить заявку</a><img src="./img/repair.png" alt="scrin">
@@ -58,8 +39,6 @@
                     <a href="#">Статус ремонта</a><img src="./img/checkstatus.png" alt="scrin">
                 </li>
             </ul>
-        </div>
-
        
             <ul class="nav-list">
                 <li class="nav-list__item"><a href="#">Ремонтируемые бренды</a></li>
@@ -71,48 +50,42 @@
                 <li class="nav-list__item"><a href="#">Отзывы</a></li>
             </ul>
         
-
-
-        <section class="text">
-            <div class="text text-text">
-                <div class="text-text text-text__articl">
-                    <p>Мы являемся авторизованным сервистным центром по ремонту техники DEell.Только у нас вы можете
+        <section class="sectext">
+                <div class="text">
+                     <p class="text-text__articl">Мы являемся авторизованным сервистным центром по ремонту техники DEell.Только у нас вы можете
                         отремрнтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
 
                         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,что подтверждает
                         большое количество постоянных клиентов. Мы гордимся тем,что к нам обращаются по рекомендациям и,
                         в свою очередь,советуют нас своим родным и близким. </p>
+                     <a class="text-text__link" href="#"><img src="./img/expand.png" width="25" height="25" alt="scrin"><span>Читать далee</span></a>
                 </div>
-                <div class="text-text text-text__link">
-                    <a href="#"><img src="./img/expand.png" width="25" height="25" alt="scrin">Читать далee</a>
-                </div>
-            </div>
-
-            <div class="text text-img">
-                <img src="./img/Picture.png" alt="scrin">
-            </div>
+                <div class="text text-img">
+                     <img src="./img/Picture.png" alt="scrin">
+               </div>
         </section>
     </div>
-</div>  
+ 
 
         <div class="block2">
 
             <div class="upperHed">
-               <div class="upperHed-text">Ремонт техники различных брендов</div>
-                </div>
+                    <div class="upperHed-text">Ремонт техники различных брендов</div>
+            </div>
             <div class="cats"></div>
             <div class="footerMenu">
-                <div class="line__expand">
+                 <div class="line__expand">
                  <img src="./img/expand.png" alt="scrin">
-                </div>
-                <input class="line_input" type="checkbox" id="check">
-                <label class="line_text" for="check">Показать все</label>
+                 </div>
+                  <input class="line_input" type="checkbox" id="check">
+                 <label class="line_text" for="check">Показать все</label>
             </div>
             <div class="slaid slaid-cats">
-            <div class="swiper mySwiperCat">
-                <div class="swiper-wrapper brand"></div>
-                <div class="swiper-pagination"></div>
-           </div>
+                 <div class="swiper mySwiperCat">
+                       <div class="swiper-wrapper brand"></div>
+                         <div class="pad"></div>
+                         <div class="swiper-pagination-light swiper-pagination"></div>
+                 </div>
             </div> 
             <div class="upperHed">
                 <div class="upperHed-text">Ремонт различных видов техники</div>
@@ -131,7 +104,8 @@
                 <div class="swiper mySwiperRemont">
                      <div class="swiper-wrapper rem">
                      </div>
-                     <div class="swiper-pagination"></div>
+                     <div class="pad"></div>
+                     <div class="swiper-pagination-light swiper-pagination"></div>
                   </div>
                     </div>
 
@@ -141,7 +115,9 @@
     </div>
 
         <div class="block3">
+            <div class="table-conteiner">
             <table>
+               
                 <caption></caption>
                 <tr>
                  <th>Ремонтные услуги</th>
@@ -232,15 +208,37 @@
                     </div>
                     </td>
                  </tr>
+               
               </table>
-
+            </div>
         <div class="slaid slaid-tab">
               <div class="swiper mySwiperTable">
                   <div class="swiper-wrapper table">
                    <div class="swiper-slide swiper-slide__tabl">
                     <div class="tabl">
+                        <div class="tabl-iner">
+                            <div class="tabl-uslugi">Ремонтные услуги</div>
+                             <div>Диагностика</div>
+                             <div class="tabl-cena">Цена</div>
+                              <div>Бесплатно</div>
+                              <div class="tabl-srok">Срок</div>
+                               <div class="tabl-zakaz">
+                               <div>30 мин</div>
+                                     <div class="call call__click">
+                                          <div class="call__text">Заказать </div>
+                                              <div class="call__goside">
+                                                   <img src="./img/goside.png" alt="scrin">
+                                              </div>
+                                          </div>
+                                     </div>
+                             </div>
+                    </div>
+            </div>
+            <div class="swiper-slide swiper-slide__tabl">
+                <div class="tabl">
+                    <div class="tabl-iner">
                     <div class="tabl-uslugi">Ремонтные услуги</div>
-                    <div>Диагностика</div>
+                    <div>Замена дисплея</div>
                     <div class="tabl-cena">Цена</div>
                     <div>Бесплатно</div>
                     <div class="tabl-srok">Срок</div>
@@ -253,12 +251,14 @@
                        </div>
                     </div>
                 </div>
+            </div>
                 </div>
             </div>
             <div class="swiper-slide swiper-slide__tabl">
                 <div class="tabl">
+                    <div class="tabl-iner">
                     <div class="tabl-uslugi">Ремонтные услуги</div>
-                    <div>Диагностика</div>
+                    <div>Замена полифонического динамика</div>
                     <div class="tabl-cena">Цена</div>
                     <div>Бесплатно</div>
                     <div class="tabl-srok">Срок</div>
@@ -270,61 +270,44 @@
                         <img src="./img/goside.png" alt="scrin">
                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-slide__tabl">
-                <div class="tabl">
-                    <div class="tabl-uslugi">Ремонтные услуги</div>
-                    <div>Диагностика</div>
-                    <div class="tabl-cena">Цена</div>
-                    <div>Бесплатно</div>
-                    <div class="tabl-srok">Срок</div>
-                    <div class="tabl-zakaz">
-                    <div>30 мин</div>
-                    <div class="call call__click">
-                        <div class="call__text">Заказать </div>
-                        <div class="call__goside">
-                        <img src="./img/goside.png" alt="scrin">
-                       </div>
-                    </div>
-                </div>
-                </div>
+                   </div>
+                 </div>
+                 </div>
             </div>
 
             <div class="swiper-slide swiper-slide__tabl">
                 <div class="tabl">
-                    <div class="tabl-uslugi">Ремонтные услуги</div>
-                    <div>Диагностика</div>
-                    <div class="tabl-cena">Цена</div>
-                    <div>Бесплатно</div>
-                    <div class="tabl-srok">Срок</div>
-                    <div class="tabl-zakaz">
-                    <div>30 мин</div>
-                    <div class="call call__click">
-                        <div class="call__text">Заказать </div>
-                        <div class="call__goside">
-                        <img src="./img/goside.png" alt="scrin">
-                       </div>
+                    <div class="tabl-iner">
+                           <div class="tabl-uslugi">Ремонтные услуги</div>
+                           <div>Тестирование с выдачей технического заключения</div>
+                           <div class="tabl-cena">Цена</div>
+                           <div>Бесплатно</div>
+                           <div class="tabl-srok">Срок</div>
+                           <div class="tabl-zakaz">
+                            <div>30 мин</div>
+                            <div class="call call__click">
+                                  <div class="call__text">Заказать </div>
+                                  <div class="call__goside">
+                                        <img src="./img/goside.png" alt="scrin">
+                                  </div>
+                          </div>
+                     </div>
                     </div>
                 </div>
-                </div>
             </div>
             </div>
-                 <div class="pad"></div>
-                  <div class="swiper-pagination"></div>
+            <div class="pad"></div>
+                  <div class="swiper-pagination-light swiper-pagination"></div>
                 </div>  
             </div>
     <div class="block3-text">
     <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
     </p>
-    </div>
-    <div class="block3-src">
-        <div>Получить коммерческое предложение</div>
-        <div class="block3-goside">
-            <img src="./img/more.png" alt="scrin">
-           </div>
-            </div>
+     </div>
+      <a class="block3-src" href="#">
+        <div class="block3-goside">Получить коммерческое предложение<img class="block3-img" src="./img/more.png" alt="scrin"> </div>
+        
+      </a>
        
                 <div class="footer">
                   <div class="footer__item">© 2019 CPS <br>Разработано командой Apesong  </div>
@@ -436,7 +419,6 @@
                 </div>
             </div>
         </div></section>
-
         <section class="madal-feedBack a">
             <div class="madal-feedBack__close">
                 <a href="#"><img src="./img/close.png" alt="scrin"></a>
@@ -488,8 +470,10 @@
             <input type="submit" name="send" id="send" style="display: none">
         </div>
         </form>
-        
         </section>
+        <section class="clickArea">
+        </section>
+        
 
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 
