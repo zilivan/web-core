@@ -3,6 +3,37 @@ $tadle-background:rgba(255, 255, 255, 1);
 $key-call:#FF3E79;
 $text-grey: #7E7E82;
 $back-ground-main: #F8F8F8;//main background
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: medium;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Medium.woff) format('woff');
+
+}
+
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: normal;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Regular.woff) format('woff');
+
+}
+
+/* Жирный */
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: bold;
+	src: local('TTLakes'),
+		url(../fonts/TTLakes-Bold.woff) format('woff');
+}
+
+
+
+
+
 body {
 	font-family: 'TTLakes', sans-serif;
 
@@ -11,8 +42,7 @@ body {
 .footer{
 	width: 100%;
 	background-color:  rgba(248, 248, 248, 1);
-	margin-left: 20px;
-	margin-right: 20px;
+	margin:0;
 	
 }
 .footer{
@@ -20,14 +50,21 @@ body {
 	margin-right: 0px;
 	
 }
+.table-conteiner{
+	
+    height:100%;
+	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
 
+}
 
 table {
-    border-collapse: collapse;
-    height:100%;
-	width: 100%;	
-	
-    
+	border-collapse: collapse;
+   width: 100%; 
+}
+.slaid-tab{
+	margin-top: 16px;
 }
 tr,td,th,.rect td{
 	padding: 0;
@@ -72,22 +109,34 @@ td {
     display:flex;
 	height:32px;
 	width: 119px;	
-	margin:0px 0px;
-	justify-content:space-between;
+	justify-content:flex-start;
 	background-color: $key-call;
     border-radius: 20px;
-	margin-right:16px;
+	cursor: pointer;
 }
 .call__goside,
 .call__text {
     color: rgb(255, 255, 255); 
 	font-size: 12px;
 	font-weight:bold;
-    margin-top: auto ;
-	margin-bottom: auto;	
-    margin-right: 4px;
-    margin-left: 12px;
+	margin: auto 0 ;
+	padding: 0;
+	box-sizing: border-box;
+    
 }
+.call__goside img{
+	height: 24px;
+	width: 24px;
+	padding-top: 2px;
+	
+}
+
+.call__text {
+line-height: 24px;
+text-transform: uppercase;
+margin-left: 12px;
+}
+
 .rect{
 	padding: 0;
 	margin: 0;
@@ -115,8 +164,18 @@ td {
 	width: 260px;
 	background-color:  rgba(255, 255, 255, 1);
 	text-align: start;
-	border-radius: 20px;
+	border-radius: 5px;
 	
+}
+.tabl-iner{
+	height: 100%;
+	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight:medium;
+	font-family: 'TTLakes', sans-serif;
 }
 .tabl-uslugi,
 .tabl-cena,
@@ -124,16 +183,13 @@ td {
 {
 	color: rgba(126, 126, 130, 1); 
     margin-top: 16px;
+	line-height: 16px;
 	
 }
-.tabl div{
-	padding-left: 16px;
-	
-}
+
 .tabl-zakaz {
 	display:flex;
 	justify-content:space-between;
-	padding-bottom: 16px;
 }
 
 	
@@ -146,36 +202,44 @@ td {
 .block3-text{
 	height:80px;
 	max-width: 421px;
+	padding-left: 16px;
 	
 }
 .block3-src{
-	margin-top: 16px;
-	display:flex;
-	height:24px;
-	width: 326px;
-	
-	
-	justify-content:space-between;
-	text-align: center;
+
+    display: block;
+    margin-left: 16px;
+    height: auto;
+    width: 80%;
+
 }
-.block3-src>div{
-	font-size: 16px;
-	line-height:24px;
-	color:#1B1C21;
-	font-weight:500;
+.block3-goside{
+	display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    font-weight: medium;
+
+}
+.block3-img {
+	height:26px;
+	width: 24px;
+	margin: -8px 0;
 }
 
 .footer{
 	display:flex;
 	justify-content:space-between;
 	flex-direction: row;
-	margin-top: 47px;
+	margin-top: 40px;
 	align-items: flex-start;
 	
 }
 .footer__item {
 	width: 220px;
 	margin-top: 32px;
+	margin-left: 16px;
+    margin-right: 16px;
 	line-height: 16px;
 	font-size: 14px;
 	color:$text-grey;
@@ -186,7 +250,18 @@ td {
 }
 .swiper-slide__tabl{
 	background: $back-ground-main;
+	width: auto;
+	margin: 16px 0 16px 16px;
 }
+ /*@media screen and (min-width: 768px)  {
+
+	.call__goside,
+	.call__text {
+	margin-left: 16px;
+	}
+}*/
+
+
 
 
 @media screen and (max-width: 768px)  {
@@ -211,8 +286,11 @@ margin-left: auto;
 margin-right: auto;
 }
 .block3-text{
-	height:auto;
-	max-width: auto;
+	height:120px;
+	max-width: 288px;
+	
 }
+
+
 }
 

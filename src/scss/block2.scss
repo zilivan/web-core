@@ -1,21 +1,23 @@
 $back-ground-main: #F8F8F8;//main background
+$green-light:#B8FFEC;
 
 body {
 	font-family: 'TTLakes', sans-serif;
 }
 .block2{
 	width: 100%;
-	margin-left: 24px;
-	margin-right: 24px;
+	margin: 0;
+	
 }
 .upperHed{
 	display: flex;
 	height:56px;
 	background-image:linear-gradient( to right, rgba(248, 248, 248, 1), rgba(255, 255, 255, 1)) ;
+	border-top: 1px solid $green-light;
+	margin-top: 16px;
 	
 }
 .upperHed-text{
-	height:24px;
 	font-size: 16px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -30,8 +32,10 @@ body {
 {
 	display: flex;
 	flex-wrap:wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
+	padding: 8px;
 	//overflow: visible;
+	
 }
 .cat,
 .remont
@@ -39,9 +43,11 @@ body {
 	display:flex;
 	height:72px;
 	min-width: 224px;	
-	margin:24px 16px;
+	margin:0 ;
 	justify-content:space-between;
 	background-color:rgba(255, 255, 255, 1);
+	border-radius:5px;
+	border:1px solid #EAEAEA;
 	
 }
 .remont{
@@ -51,6 +57,8 @@ body {
 .swiper-slide__cat,
 .swiper-slide__remont{
 	background-color:$back-ground-main;
+	margin: 16px 0 16px 16px;
+	width:auto ;
 }
 
 .bitmap{
@@ -74,10 +82,10 @@ body {
 	margin-bottom: auto;	
 }
 .remont .line__go{
-	margin-right: auto;
-	margin-top: auto ;
-	margin-bottom: 16px;
-
+	margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: 16px;
+    margin-left: auto;
 }
 .footerMenu{
 	display:flex;
@@ -134,19 +142,18 @@ body {
 .footerMenu{
 	display: none;
 }
-/*.block2{
-	width: 320px;
-}*/
-}
 
-
-@media screen and (max-width: 769px)  {
-	
-	.cats,
-    .remonts
-         {
-	
+.cats,
+.remonts{
 	flex-wrap:nowrap;
                }
 
+}
+
+
+@media screen and (min-width: 768px)  {
+.cat,
+.remont{
+margin: 8px;
+}
 }

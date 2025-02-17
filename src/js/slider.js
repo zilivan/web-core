@@ -31,32 +31,33 @@ var swiperWrapperRemont = document.querySelector('.rem');
 
 
 var swiperCat = new Swiper(".mySwiperCat", {
-     slidesPerView:1,
-     spaceBetween:10,
+     slidesPerView:'auto',
+     freeMode: true,
      enabled:true,
     pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
+      el: ".swiper-pagination-light",
+      clickable: true,
      
     },
   });
   var swiperTable = new Swiper(".mySwiperTable", {
-    slidesPerView:1,
-    spaceBetween:10,
+    slidesPerView:'auto',
+    
+    freeMode: true,
     enabled:true,
    pagination: {
-     el: ".swiper-pagination",
-     dynamicBullets: true,
+    el: ".swiper-pagination-light",
+    clickable: true,
     
    },
  });
  var swiperRemont = new Swiper(".mySwiperRemont", {
-  slidesPerView:1,
-  spaceBetween:10,
+  slidesPerView:'auto',
+  freeMode: true,
   enabled:true,
- pagination: {
-   el: ".swiper-pagination",
-   dynamicBullets: true,
+   pagination: {
+   el: ".swiper-pagination-light",
+   clickable: true,
   
  },
 });
@@ -195,5 +196,5 @@ var remontViewAllPicter = function (type) {
 viewPicter ("brand");
  viewPicter ("slidBrand"); 
 viewPicter ("remont");
- viewPicter ("slidRemont"); 
+ viewPicter ("slidRemont");
                                          

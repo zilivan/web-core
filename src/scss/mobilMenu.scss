@@ -107,6 +107,8 @@ margin-left:16px;
 	text-decoration: none;
 	font-weight: bold;
 	color:$text-black;
+	font-size: 16px;
+
 }
 
 /*transform*/
@@ -145,7 +147,11 @@ transition:transform 0.5s,
 
 	color: grey;
 }
-
+.clickArea{
+	display: none;
+	
+	
+}
 
 /*screen*/
 
@@ -180,15 +186,26 @@ transition:transform 0.5s,
 	body .backMenu.onBurger {
 		display: flex;
 		margin-top: -15px;
-		height: 2000px;
+		height: 1024px;
 	
 		}
-		
+		.clickArea.view{
+			display: flex;
+			position: absolute;
+			left:330px;
+			height: 1024px;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			z-index: 0.01;
+		//opacity: 0.11;
+
+		}
 		main.disable
 		{
 			position: absolute;
 		   left:330px;
-		   opacity: 0.01;
+		   opacity: 0.11;
 		  height: 800px;
 		  Overflow: hidden;
 		 

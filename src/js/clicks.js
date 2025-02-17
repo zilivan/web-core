@@ -54,7 +54,6 @@ var callClicks = () => {
           callClick[i].addEventListener('click', function (event) {
              window.scrollTo({
               top:0
-              //behavior:"smooth"
              });
             madalCallOpen(event);
 
@@ -68,6 +67,7 @@ lineBurgerOn.addEventListener('click', function (event) {
                           main.classList.add('disable');
                           backMenuOn.classList.add('onBurger');
                           line.classList.add('disable');
+                          clickArea.classList.add('view');
                           
                                });              
 
@@ -77,12 +77,14 @@ lineBurgerOff.addEventListener('click', function (event) {
                     main.classList.remove('disable');
                     backMenuOn.classList.remove('onBurger');
                     line.classList.remove('disable');
+                    clickArea.classList.remove('view')
             });              
 clickArea.addEventListener('click', function (event) { 
                            event.preventDefault();
                            main.classList.remove('disable');
                            backMenuOn.classList.remove('onBurger');
                            line.classList.remove('disable');
+                           clickArea.classList.remove('view')
                             });          
                                
 
