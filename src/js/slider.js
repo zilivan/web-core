@@ -1,7 +1,7 @@
 const brends = ["hp","aplle","aser","bosh","samsung","hp","aser","bosh","aser","bosh","samsung","hp"];
 const remmonts = ["Ремонт ноутбуков","Ремонт планшетов","Ремонт ПК","Ремонт мониторов","Ремонт зонтов","Ремонт часов","Ремонт холдильников","Ремонт телефонов"];
-var nombersRemont = 4;
-var nombersBrand = 8;
+var nombersRemont = 3;
+var nombersBrand = 6;
 var cats = document.querySelector('.cats');
 var remonts = document.querySelector('.remonts');
 
