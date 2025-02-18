@@ -86,7 +86,9 @@ a {
 
 .line__group,
 .line__repair,
-.line__checkstatus {
+.line__checkstatus,
+.line__chat,
+.line__profile {
   margin-left: 16px; }
 
 /*line*/
@@ -424,7 +426,8 @@ a img {
 
 @media screen and (max-width: 768px) {
   .backMenu {
-    width: 100%; }
+    width: 100%;
+    height: 676px; }
   body .backMenu.onBurger {
     display: flex;
     margin-top: -15px; }
@@ -738,13 +741,14 @@ td {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 40px;
+  margin-bottom: 25px;
   align-items: flex-start; }
 
 .footer__item {
   width: 220px;
   margin-top: 32px;
-  margin-left: 16px;
   margin-right: 16px;
+  margin-left: 16px;
   line-height: 16px;
   font-size: 14px;
   color: #7E7E82; }
@@ -757,13 +761,6 @@ td {
   width: auto;
   margin: 16px 0 16px 16px; }
 
-/*@media screen and (min-width: 768px)  {
-
-	.call__goside,
-	.call__text {
-	margin-left: 16px;
-	}
-}*/
 @media screen and (max-width: 768px) {
   .slaid-cats,
   .slaid-remonts,
@@ -772,6 +769,7 @@ td {
   table {
     display: none; }
   .footer {
+    margin-bottom: 19px;
     flex-direction: column;
     text-align: center; }
   .footer__item {
@@ -783,9 +781,9 @@ td {
     max-width: 288px; } }
 
 @charset "UTF-8";
-* {
-  border: 1px solid green; }
-
+/**{
+	border:1px solid green;
+}*/
 @font-face {
   font-family: 'TTLakes';
   font-style: normal;
@@ -855,7 +853,14 @@ form textarea {
   float: right;
   margin-top: 60px; }
 
+.back_menu.activ {
+  display: none; }
+
 @media screen and (min-width: 320px) {
+  .madal-call.activ h1::before,
+  .madal-feedBack.activ h1::before {
+    margin-left: -20px;
+    margin-right: 20px; }
   .madal-feedBack,
   .madal-call {
     display: none;
@@ -866,25 +871,34 @@ form textarea {
     display: block;
     position: absolute;
     left: auto;
-    right: 0; }
+    right: 0;
+    height: 676px;
+    border-left: 1px solid #D9FFF5;
+    box-shadow: 0px 0px 10px 0px rgba(14, 24, 80, 0.2); }
   main.activ {
     position: absolute;
-    left: 0px;
     width: 900px;
-    opacity: 0.01; }
-  .back_menu.activ {
-    display: none; } }
+    opacity: 0.036;
+    right: 480px;
+    height: 1440px;
+    overflow: hidden; } }
 
 @media screen and (min-width: 1121px) {
   main {
     position: absolute;
-    left: 330px; } }
+    left: 330px; }
+  .madal-call.activ,
+  .madal-feedBack.activ {
+    height: 1440px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  .madal-call.activ,
+  .madal-feedBack.activ {
+    height: 1024px; }
+  main.activ {
+    height: 1024px; } }
 
 @media screen and (max-width: 768px) {
-  .madal-feedBack.activ {
-    display: block;
-    position: absolute;
-    width: auto; }
   .madal-feedBack__close,
   .madal-call__close {
     position: static;
@@ -895,11 +909,27 @@ form textarea {
     width: 0;
     opacity: 0.01; }
   .back_menu.activ {
-    display: none; }
-  .madal-call.activ {
+    display: none; } }
+
+@media screen and (min-width: 769px) {
+  .madal-call.activ,
+  .madal-feedBack.activ {
     display: block;
     position: absolute;
-    left: 0px; } }
+    right: 0px;
+    width: 440px;
+    padding: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .madal-call.activ,
+  .madal-feedBack.activ {
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0px;
+    height: 676px;
+    border-left: 0px solid #D9FFF5;
+    box-shadow: 0px 0px 0px 0px rgba(14, 24, 80, 0.01); } }
 
 
 /*# sourceMappingURL=style.css.map*/
